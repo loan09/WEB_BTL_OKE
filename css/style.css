@@ -1,0 +1,116 @@
+body{
+  background-image: url(../BanHang/img/coffe_1.jpg);
+}
+/*--------------menu--------------*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .btn_thu {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+
+li a:hover, .abx:hover .btn_thu {
+  background-color: red;
+}
+
+li.abx {
+  /*display: inline-block;*/
+}
+
+.abx-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.abx-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.abx-content a:hover {background-color: #f1f1f1;}
+
+.abx:hover .abx-content {
+  display: block;
+}
+/*---------------content-------------------*/
+.content_1 p{
+  font-size: 150%;
+  /*margin-top: 10%;*/
+  font-family: 'Dancing Script', cursive;
+}
+.pp{
+  margin-top: 10%;
+  margin-left: -7%;
+}
+.content_1 h1{
+  font-size: 300%;
+  color: white;
+  margin-top: 100px;
+  font-family: 'Source Serif Pro', serif;
+}
+.content_1 h4{
+  font-size: 230%;
+  color: white;
+  margin-left: 10%;
+  font-family: 'Source Serif Pro', serif;
+  /*margin-top: 150px;*/
+}
+p{
+  color: white;
+  font-size: 300%;
+  margin-left: 10%;
+}
+.content_1 img{
+  width: 60%;
+}
+.add{
+  text-align: left;
+  margin-left: 20%;
+}
+.form_2_ngay th{
+  background-color: #549346;
+}
+@media screen and (max-width: 360px) {
+    .content_1 h1{
+      font-size: 200%;
+    }
+    .content_1 h4{
+      font-size: 150%;
+      margin-left: 5%;
+    }
+    .content_1 p{
+      font-size: 120%;
+    }
+}
+@media screen and (max-width: 280px) {
+    .content_1 h1{
+      font-size: 200%;
+    }
+    .content_1 h4{
+      font-size: 150%;
+      margin-left: 5%;
+    }
+    .content_1 p{
+      font-size: 120%;
+    }
+}

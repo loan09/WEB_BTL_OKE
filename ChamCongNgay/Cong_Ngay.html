@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chấm Công</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384- fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script language="javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div class="content_ngay">
+		<div class="main_ngay1">
+			<div class="col-md-12 main_ngay">
+				<h4>Chấm Công Ngày</h4>
+				<form class="col-md-12 form_1_ngay">
+					<table>
+						<tbody>
+							<tr class="hd">
+								<td><label for="NhanVien_">Hoạt Động</label></td>
+								<td>
+									<select name="nhanvien" id="NhanVien_">
+										<option value="1">Đang làm việc</option>
+										<option value="2">Đang nghỉ ngơi</option>
+										<option value="2">Đang tăng ca</option>
+									</select>
+								</td>
+							</tr>
+							<tr class="nhan_V">
+								<td><label for="phong_1">Nhân Viên</label></td>
+								<td>
+									<select name="phong" id="phong_1">
+										<option value="1">--Quản Lý--</option>
+										<option value="2">--Thu Ngân--</option>
+										<option value="3">--Phục Vụ--</option>
+										<option value="4">--Pha Chế--</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+				<form class="col-md-12 form_2_ngay">
+					<table border="1" cellpadding="10" cellspacing="0">
+						<tbody>
+							<tr>
+								<th><i class="fas fa-check-square"></i></th>
+								<th>Công</th>
+								<th>Mã NV</th>
+								<th>Họ Tên</th>
+								<th>Ngày Sinh</th>
+								<th>Giới Tính</th>
+								<th>Chức Vụ</th>
+								<th>Công Việc</th>
+							</tr>
+							<tr class="color_">
+								<td><i class="fal fa-square" onclick="addToCart(count)"></i></td>
+								<td><p id="count">0</p></td>
+								<td>121</td>
+								<td>Phạm Xuân Thành</td>
+								<td>12/08/1998</td>
+								<td>Nam</td>
+								<td>Quản Lý</td>
+								<td>Quản Lý Quán</td>
+							</tr>
+							<tr>
+								<td><i class="fal fa-square" onclick="addToCart1(count1)"></i></td>
+								<td><p id="count1">0</p></td>
+								<td>122</td>
+								<td>Phạm Quang Minh</td>
+								<td>22/09/2001</td>
+								<td>Nam</td>
+								<td>Thu NGân</td>
+								<td>Quản Lý Thu Ngân</td>
+							</tr>
+							<tr class="color_">
+								<td><i class="fal fa-square" onclick="addToCart2(count2)"></i></td>
+								<td><p id="count2">0</p></td>
+								<td>123</td>
+								<td>Lê Phương Anh</td>
+								<td>02/12/2000</td>
+								<td>Nữ</td>
+								<td>Pha Chế</td>
+								<td>Pha Chế</td>
+							</tr>
+							<tr>
+								<td><i class="fal fa-square" onclick="addToCart3(count3)"></i></td>
+								<td><p id="count3">0</p></td>
+								<td>124</td>
+								<td>Nguyễn Mai Phương</td>
+								<td>26/06/2001</td>
+								<td>Nữ</td>
+								<td>Phục Vụ</td>
+								<td>Phục Vụ Quán</td>
+							</tr>
+							<tr class="color_">
+								<td><i class="fal fa-square" onclick="addToCart4(count4)"></i></td>
+								<td><p id="count4">0</p></td>
+								<td>125</td>
+								<td>Đỗ Hoàng</td>
+								<td>15/09/1999</td>
+								<td>Nam</td>
+								<td>Phục Vụ</td>
+								<td>Phục Vụ Quán</td>
+							</tr>
+							<tr>
+								<td><i class="fal fa-square" onclick="addToCart5(count5)"></i></td>
+								<td><p id="count5">0</p></td>
+								<td>126</td>
+								<td>Hoàng Hoa</td>
+								<td>20/05/2001</td>
+								<td>Nữ</td>
+								<td>Phục Vụ</td>
+								<td>Phục Vụ Quán</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+			<div id="save">
+				<a href="#" onclick="save()">Save</a>
+			</div>
+		</div>
+		<a href="../index.html"><img src="../BanHang/img/back1.jpg" class="icon"></a>		
+	</div>
+</body>
+</html>	

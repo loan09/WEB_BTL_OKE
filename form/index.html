@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <head>
+	  <meta charset="UTF-8">
+	  <meta name="description" content="Free Web tutorials">
+	  <meta name="keywords" content="HTML, CSS, JavaScript">
+	  <meta name="author" content="John Doe">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head> -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script language="javascript" src="js/script.js"></script>
+</head>
+<body onload="form_()">
+	<div class="conten_f">
+		<h3>Thông Tin Cá Nhân</h3>
+		<div>
+			<form class="col-md-4 img"  data-toggle="tooltip"  data-placement="bottom" title="ảnh đại diện">
+				<img src="#" alt="Ảnh đại diện">
+			</form>
+			<form class="col-md-7 t_tin" name="frmAccount">
+				<table>
+					<tbody>
+						<tr>
+							<td><label for="username">Họ Tên<span class="red">(*)</span>: </label></td>
+							<td><input type="text" name="fullname" id="username" onkeyup="myFunction()"></td>
+						</tr>
+						<tr>
+							<td><label for="txt_sn">Ngày Sinh<span class="red">(*)</span>: </label></td>
+							<td><input type="text" name="sn" id="txt_sn" data-toggle="tooltip"  data-placement="bottom" title="dd/mm/yy"></td>
+						</tr>
+						<tr>
+							<td><label for="txt_que">Quê Quán<span class="red">(*)</span>: </label></td>
+							<td><input type="text" name="que" id="txt_que"  data-toggle="tooltip"  data-placement="bottom" title="xã-huyện(quận)-tỉnh(TP)"></td>
+						</tr>
+						<tr>
+							<td><label for="txt_add">Địa Chỉ Hiện Tại<span class="red">(*)</span>: </label></td>
+							<td><input type="text" name="add" id="txt_add"  data-toggle="tooltip"  data-placement="bottom" title="xã-huyện(quận)-tỉnh(TP)"></td>
+						</tr>
+						<tr class="gt">
+							<td>Giới Tính: </td>
+							<td>
+								<label for="rdom">Nam</label>
+								<input type="radio" name="gender" id="rdom" value="1">
+								<label for="rdofm">Nữ</label>
+								<input type="radio" name="gender" id="rdofm" value="2">
+							</td>
+						</tr>
+						<tr>
+							<td><label for="txt_dt">Điện Thoại Di Động: </label></td>
+							<td><input type="text" name="phone" id="txt_dt" data-toggle="tooltip"  data-placement="bottom" title="Số điện thoại của bạn!"></td>
+						</tr>
+						<tr>
+							<td><label for="txtmail">Email: </label></td>
+							<td>
+								<input type="text" name="email" id="txtmail" data-toggle="tooltip"  data-placement="bottom" title="....@gmail.com">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+		<form class="form_2f"  name="frmAccount">
+			<table>
+				<tbody>
+					<tr class="col-md-6 left">
+						<td><label for="nationality">Quốc Tịch<span class="red">(*)</span>: </label></td>
+						<td>
+							<select name="Nation" id="nationality">
+								<option value="1">Chọn</option>
+								<option value="2">Việt Nam</option>
+								<option value="3">Trung Quốc</option>
+								<option value="4">Hàn Quốc</option>
+								<option value="5">Nhật Bản</option>
+								<option value="6">Thái Lan</option>
+							</select>
+						</td>
+					</tr>
+					<tr class="col-md-6 left">
+						<td><label for="nation">Dân Tộc: </label></td>
+						<td>
+							<select name="Nation_" id="nation">
+								<option value="1">Chọn</option>
+								<option value="2">Kinh</option>
+								<option value="3">Tày</option>
+								<option value="4">Mường</option>
+							</select>
+						</td>
+					</tr>
+					<tr class="col-md-6 left">
+						<td><label for="tongiao">Tôn Giáo<span class="red">(*)</span>: </label></td>
+						<td>
+							<select name="Ton_giao_" id="tongiao">
+								<option value="1">Chọn</option>
+								<option value="2">Phật Giáo</option>
+								<option value="3">Nho Giáo</option>
+								<option value="4">Đạo Giáo</option>
+							</select>
+						</td>
+					</tr>
+					<tr class="col-md-6 left">
+						<td><label for="lear">Học Vấn: </label></td>
+						<td>
+							<select name="lear_" id="lear">
+								<option value="1">Chọn</option>
+								<option value="2">9/12</option>
+								<option value="5">12/12</option>
+								<option value="3">Trung Cấp</option>
+								<option value="6">Đại Học</option>
+							</select>
+						</td>
+					</tr>
+					<tr class="col-md-6 left">
+						<td><label for="english">Ngoại Ngữ: </label></td>
+						<td>
+							<select name="english_" id="english">
+								<option value="1">Chọn</option>
+								<option value="3">Tiếng Anh</option>
+								<option value="4">Tiếng Hàn</option>
+								<option value="5">Tiếng Nhật</option>
+								<option value="6">Tiếng Trung</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<div class="CaNhan">
+			<form class="col-md-6 cmtnd" name="f">
+				<p><b>Chứng minh thư nhân dân</b></p>
+				<table>
+					<tr>
+						<td><label for="txt_cmt">Số CMTND <span class="red">(*)</span>: </label></td>
+						<td><input type="text" name="so_cmtnd" id="txt_cmt"></td>
+					</tr>
+					<tr>
+						<td><label for="txt_ngay">Ngày Cấp <span class="red">(*)</span>: </label></td>
+						<td><input type="text" name="ngay_cap" id="txt_ngay" data-toggle="tooltip"  data-placement="bottom" title="dd/mm/yy"></td>
+					</tr>
+					<tr>
+						<td><label for="txt_noi">Nơi Cấp<span class="red">(*)</span>: </label></td>
+						<td><input type="text" name="Noi_cap" id="txt_noi"></td>
+					</tr>
+				</table>
+			</form>
+			<form class="col-md-7 headth" name="fheath">
+				<p><b>Sức Khỏe</b></p>
+				<table>
+					<tr>
+						<td><label for="txt_heath">Tình trạng sức khỏe<span class="red">(*)</span>:</label></td>
+						<td><input type="text" name="sk" id="txt_heath"></td>
+					</tr>
+					<tr>
+						<td><label for="txt_height">Chiều Cao(cm): </label></td>
+						<td><input type="text" name="height" id="txt_height"></td>
+					</tr>
+					<tr>
+						<td><label for="txt_weight">Cân Nặng(kg): </label></td>
+						<td><input type="text" name="weight" id="txt_weight"></td>
+					</tr>
+				</table>
+			</form>
+			<form class="col-md-12 ghi_chu">
+				<tr>
+					<td><label for="txtfw">Ghi Chú: </label></td>
+					<td><textarea name="fw" id="txtfw"></textarea>
+					</td>
+				</tr>
+			</form>
+		</div>
+		<div class="back">
+			<a href="#" class="go" onclick="validform(document.forms.frmAccount);">Gửi</a>
+		</div>
+	</div>
+</body>
+</html>

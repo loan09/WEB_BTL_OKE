@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lương Tháng</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384- fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<div class="content_ngay">
+		<div class="main_ngay">
+			<div class="col-md-12 main_ngay">
+				<h4>Lương Tháng</h4>
+				<form class="col-md-12 form_1_ngay">
+					<table>
+						<tbody>
+							<tr class="hd">
+								<td><label for="NhanVien_">Năm: </label></td>
+								<td>
+									<select name="nhanvien" id="NhanVien_">
+										<option value="1">2020</option>
+										<option value="2">2019</option>
+										<option value="2">2018</option>
+									</select>
+								</td>
+							</tr>
+							<tr class="nhan_V">
+								<td><label for="phong_1">Tháng: </label></td>
+								<td>
+									<select name="phong" id="phong_1">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="4">5</option>
+										<option value="4">6</option>
+										<option value="4">7</option>
+										<option value="4">8</option>
+										<option value="4">9</option>
+										<option value="4">10</option>
+										<option value="4">11</option>
+										<option value="4">12</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+				<form class="col-md-12 form_2_ngay">
+					<table border="1" cellpadding="10" cellspacing="0">
+						<tbody>
+							<tr>
+								<th>STT</th>
+								<th>Tiền Công</th>
+								<th>Mã NV</th>
+								<th>Họ Tên</th>
+								<th>Ngày Sinh</th>
+								<th>Giới Tính</th>
+								<th>Chức Vụ</th>
+								<th class="none">Công Việc</th>
+							</tr>
+							<tr class="color_">
+								<td>1</td>
+								<td><p>2.500.000</p></td>
+								<td>122</td>
+								<td>Phạm Xuân Thành</td>
+								<td>12/09/2001</td>
+								<td>Nam</td>
+								<td>Quản Lý</td>
+								<td class="none">Quản Lý</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td><p>2.000.000</p></td>
+								<td>122</td>
+								<td>Phạm Quang Minh</td>
+								<td>22/09/2001</td>
+								<td>Nam</td>
+								<td>Thu NGân</td>
+								<td class="none">Quản Lý Thu Ngân</td>
+							</tr>
+							<tr class="color_">
+								<td>3</td>
+								<td><p>1.500.000</p></td>
+								<td>123</td>
+								<td>Lê Phương Anh</td>
+								<td>02/12/2000</td>
+								<td>Nữ</td>
+								<td>Pha Chế</td>
+								<td class="none">Pha Chế</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td><p>1.300.000</p></td>
+								<td>124</td>
+								<td>Nguyễn Mai Phương</td>
+								<td>26/06/2001</td>
+								<td>Nữ</td>
+								<td>Phục Vụ</td>
+								<td class="none">Phục Vụ Quán</td>
+							</tr>
+							<tr class="color_">
+								<td>5</td>
+								<td><p>1.300.000</p></td>
+								<td>125</td>
+								<td>Đỗ Hoàng</td>
+								<td>15/09/1999</td>
+								<td>Nam</td>
+								<td>Phục Vụ</td>
+								<td class="none">Phục Vụ Quán</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td><p>1.300.000</p></td>
+								<td>126</td>
+								<td>Hoàng Hoa</td>
+								<td>20/05/2001</td>
+								<td>Nữ</td>
+								<td>Phục Vụ</td>
+								<td class="none">Phục Vụ Quán</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+			<div id="save">
+				<p><b>Tổng tiền lương tháng:</b> <p>9.900.000(đ)</p>
+			</div>
+		</div>
+		<a href="../index.html"><img src="../BanHang/img/back1.jpg" class="icon"></a>
+	</div>
+</body>
+</html>	

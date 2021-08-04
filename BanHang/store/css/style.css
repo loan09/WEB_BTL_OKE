@@ -1,0 +1,180 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*body{
+	background-color: #FBF7F7;
+}*/
+
+/*----------------*/
+h3{
+	width: 100%;
+	margin-bottom: 40px;
+	float: left;
+	color:  #ED7308;
+	font-weight: 700;
+	font-size: 200%;
+	text-align: center;
+}
+h3::after{/*tạo đường kẻ ngang phía dưới chữ*/
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background-color: #ED7308;
+    margin: 0 auto;/*căn giữa*/
+    margin-top: 5px;
+}
+h4{
+	text-align: center;
+	font-size: 120%;
+	margin-top: 30px;
+}
+/*-------*/
+.carousel-item{
+	width: 100%; height: 550px;
+}
+/*====================*/
+
+
+.d-block{
+	width: 100%; 
+	height: 550px;
+}
+
+/*===============*/
+
+
+
+.cafe{
+	float: left;
+}
+.anh_cafe{
+	width: 100%;
+	/*height: 350px;*/
+	margin:0px 0px 0px 0px;
+}
+/*------Tim kiem--------*/
+.anh_nen{
+	background-image: url(../../img/store.jpg);
+	height: 500px;
+}
+.my_coffee{
+	width: 70%; 
+	color: white; 
+	text-align:center; 
+	margin-left: 40%; 
+	padding-top: 120px; 
+	font-size: 140%; 
+	line-height: 2
+}
+/*--------------------*/
+.info_main{
+	width: 100%; 
+	/*height: 500px; */
+	float: left; 
+	/*border: 1px solid;*/
+	margin-top: 100px;
+}
+.info_main h3{
+	margin-bottom: 100px;
+}
+.content_1{
+	width: 65%;
+	margin: 0 auto;
+}
+.introduct_1{
+	/*height: 450px;*/
+	text-align: center;
+	padding-top: 50px;
+	float: left;
+	background-color:#EEEBEE;
+	margin-bottom:100px;
+}
+.introduct_1 p{
+	text-align: center;
+	font-size: 120%;
+	line-height: 2;
+}
+.main{
+	padding-bottom: 30px;
+}
+/*======================*/
+.introduct_2{
+	float: left;
+	margin: 0 auto;
+	padding: 0 auto;
+	/*border-bottom: 1px solid #F76228;*/
+}
+.content_2{
+	/*padding-left: 30px;*/
+	/*padding-right: 30px;*/
+}
+.anh1{
+	width: 100%;
+	/*height: 0%;*/
+	height: 70%;
+	/*height: 100%;*/
+	float: left;
+	/*margin-bottom: 20px;*/
+}
+.nd_cafe{
+	padding-left: 10%;
+}
+@media only screen and (max-width: 730px) {
+	.cafe{
+		width: 100%;
+		height: 350px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.nd_cafe{
+		height: 80px;
+	}
+}
+@media only screen and (max-width: 575px) {
+	.cafe{
+		width: 100%;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.nd_cafe{
+		height: 80px;
+	}
+}
+@media screen and (max-width: 480px) {
+	*{
+		font-size: 100%;
+	}
+	h3{
+		font-size: 130%;
+	}
+	.my_coffee{
+		margin-left: 10%;
+	}
+}
+@media screen and (max-width: 281px) {
+	h3::after{/*tạo đường kẻ ngang phía dưới chữ*/
+	    content: " ";
+	    display: block;
+	    width: 120px;
+	    height: 2px;
+	}
+	.info_main{
+		margin-top: 20px;
+	}
+    .info_main h3{
+    	font-size: 100%;
+    	margin-bottom: 30px;
+    	margin-left: 0px;
+    }	
+    h4{
+    	font-size: 100%;
+    	margin-top: 0px;
+    }
+    .cafe{
+    	/*height: 300px;*/
+    	margin-bottom: 120px;
+    }
+}

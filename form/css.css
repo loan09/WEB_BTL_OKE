@@ -1,0 +1,142 @@
+.conten_f{
+	width: 70%;
+	margin: 0 auto;
+	background-color: #EFF1FA;
+	padding-bottom: 30px;
+	margin-bottom: 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.conten_f h3{
+	font-size: 150%;
+	text-align: center;
+	padding: 10px;
+	background-color: #D6E6F7;
+}
+.img{
+	width: 25%; 
+	height: 100px; 
+	border: 1px solid; 
+	margin-bottom: 20px; 
+	margin-left: 20px;
+}
+.red{
+	color: red;
+}
+input{
+	width: 100%;
+}
+.gt input{
+	width: 30%;
+}
+/*form{
+	padding-left: 30px;
+}*/
+.left{
+	float: left;
+}
+.right{
+	float: right;
+	/*margin-left: 20px;*/
+}
+.form_2f{
+	margin-top: 30px;
+}
+.CaNhan{
+	margin-top: 30px;
+	padding-left: 30px;
+}
+.cmtnd{
+	/*float: left;*/
+	border: 1px solid red;
+	border-radius: 10px;
+	padding-bottom: 20px;
+}
+.headth{
+	border: 1px solid red;
+	border-radius: 10px;
+	padding-bottom: 20px;
+	/*float: right;*/
+	margin-top: 20px;
+}
+.ghi_chu{
+	margin-top: 20px;
+}
+#txtfw{
+	width: 100%;
+	height: 100px;
+}
+.back{
+	margin-top: 20px;
+}
+.go{
+	margin-left: 40%;
+	color: white;
+	border-radius: 10px;
+	background-color: #5B995A;
+	padding: 5px 20px 5px 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and(max-width: 480px) {
+	.conten_f{
+		width: 100%;
+	}
+	.conten_f h3{
+		font-size: 100%;
+	}
+	.img{
+		width: 30%; 
+		height: 100px; 
+		border: 1px solid; 
+		margin-bottom: 20px; 
+		margin-left: 20px;
+	}
+	form{
+		padding-left: 10px;
+	}
+	.form_2f{
+		margin-top: 10px;
+	}
+	.CaNhan{
+		margin-top: 10px;
+		padding-left: 0px;
+	}
+	.cmtnd{
+		/*float: left;*/
+		border: 1px solid red;
+		border-radius: 10px;
+		padding-bottom: 10px;
+	}
+}
+@media screen and(max-width: 280px) {
+	.conten_f{
+		width: 100%;
+	}
+	.conten_f h3{
+		font-size: 90%;
+	}
+	.img{
+		width: 100%; 
+		height: 90px; 
+		border: 1px solid; 
+		margin-bottom: 20px; 
+		margin-left: 20px;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	form{
+		padding-left: 10px;
+	}
+	.form_2f{
+		margin-top: 10px;
+	}
+	.CaNhan{
+		margin-top: 10px;
+		padding-left: 0px;
+	}
+	.cmtnd{
+		/*float: left;*/
+		border: 1px solid red;
+		border-radius: 10px;
+		padding-bottom: 10px;
+	}
+}

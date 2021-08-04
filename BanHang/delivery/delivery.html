@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Giao Hàng</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384- fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script language="javascript" src="js/script.js"></script>
+	<script language="javascript" src="../js_main/script.js"></script>
+</head>
+<body>
+	<article>
+		<nav class="sticky navbar navbar-expand-md navbar-light badge-light" style="padding: 0px 0px 0px 0px">
+			<a class="navbar-brand" href="../index.html"><img src="../img/nen_0.png" class="img"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<form class="form-inline my-2 my-lg-0">
+				  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+
+		<div class="contain">
+			<div class="dilivery">
+				<input placeholder="    Nhập địa chỉ giao hàng" type="text" name="mua hàng">
+				<br>
+				<br>
+				<a href="../menu/menu.html" class="seen">xem thêm menu</a>
+			</div>
+		</div>
+
+		<div class="content_di">
+			<div class="row">
+				<div class="col-md-3 sidebar">
+					<ul class="dili_11">
+						<li><a href="#mon_thu">Món phải thử</a></li>
+						<li><a href="#cafe_viet">Cafe Việt</a></li>
+						<li><a href="#cafe_may">Cafe Máy</a></li>
+						<li><a href="#nuoc_tc">Nước trái cây</a></li>
+						<li><a href="#banh">Bánh Ngọt</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-5 dili">
+					<div class="dili_main">
+						<div>
+							<p>Mọi món phải thử <br></p>
+							<div class="img_dili"  id="mon_thu">
+								<div class="col-3 img_di"><img src="../img/cacao_4.jpg" data-toggle="tooltip"  data-placement="bottom" title="Cafe ca cao"></div>
+								<div class="col-6 img_nd">
+									<p>Cafe Ca Cao <br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship" onclick="addToCart(0)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/bacsiu1.jpg" data-toggle="tooltip"  data-placement="bottom" title="Bạc sỉu"></div>
+								<div class="col-6 img_nd">
+									<p>Bạc Sỉu<br></p>
+									<h5>30.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(1)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/cafeden_3.jpg"data-toggle="tooltip"  data-placement="bottom" title="Cafe đen"></div>
+								<div class="col-6 img_nd">
+									<p>Cafe Đen<br></p>
+									<h5>15.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(2)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/cafe-capuchino.jpg" data-toggle="tooltip"  data-placement="bottom" title="Capuchino"></div>
+								<div class="col-6 img_nd">
+									<p>CAPUCHINO<br></p>
+									<h5>25.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(3)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/cafe_sua.jpg" data-toggle="tooltip"  data-placement="bottom" title="cafe sữa"></div>
+								<div class="col-6 img_nd">
+									<p>Cafe Sữa<br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(4)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/cafedaxay3.jpg" data-toggle="tooltip"  data-placement="bottom" title="Cafe đá xay"></div>
+								<div class="col-6 img_nd">
+									<p>Cafe Đá Xay<br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(5)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</div>
+					<!-- <div class="dili_main" style="padding-top: 50px; margin-top: 50px">
+						<div class="menu_deli" style="padding-top: 30px;"> -->
+					<div class="dili_main">
+						<div>
+							<p >Cafe Việt<br></p>
+							<div class="img_dili" id="cafe_viet">
+								<div class="col-3 img_di"><img src="../img/cafeden0.jpg" data-toggle="tooltip"  data-placement="bottom" title="Cafe đen"></div>
+								<div class="col-6 img_nd">
+									<p>Cafe Đen<br></p>
+									<h5>15.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(6)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/trung0.jpg" data-toggle="tooltip"  data-placement="bottom" title="Cafe trứng"></div>
+								<div class="col-6 img_nd">
+									<p>Cafe Trứng<br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(7)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/sua.jpg" data-toggle="tooltip"  data-placement="bottom" title="cafe sữa"></div>
+								<div class="col-6 img_nd">
+									<p>Cafe Sữa <br></p>
+									<h5>15.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(8)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/cacao_suada.jpg" data-toggle="tooltip"  data-placement="bottom" title="Cafe sữa đá"></div>
+								<div class="col-6 img_nd">
+									<p>Cafe Sữa Đá<br></p>
+									<h5>15.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(9)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/milovai.png" data-toggle="tooltip"  data-placement="bottom" title="Milo vải"></div>
+								<div class="col-6 img_nd">
+									<p>Milo Vải<br></p>
+									<h5>15.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(10)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/mochadaxay.png" data-toggle="tooltip"  data-placement="bottom" title="Mocha đá xay"></div>
+								<div class="col-6 img_nd">
+									<p>Mocha Đá Xay<br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(11)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+					<div class="dili_main">
+						<div>
+							<p>Cafe Máy<br></p>
+							<div class="img_dili" id="cafe_may">
+								<div class="col-3 img_di"><img src="../img/amechicano.jpg" data-toggle="tooltip"  data-placement="bottom" title="Americano"></div>
+								<div class="col-6 img_nd">
+									<p>AMERICANO<br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(12)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/cappu.jpg" data-toggle="tooltip"  data-placement="bottom" title="Cappuccino"></div>
+								<div class="col-6 img_nd">
+									<p>CAPPUCCINO<br></p>
+									<h5>30.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(13)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/carrame.jpg" data-toggle="tooltip"  data-placement="bottom" title="Caramel macchiato"></div>
+								<div class="col-6 img_nd">
+									<p>CARAMEL MACCHIATO<br></p>
+									<h5>35.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(14)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/espresso.jpg" data-toggle="tooltip"  data-placement="bottom" title="Espresso"></div>
+								<div class="col-6 img_nd">
+									<p>ESPRESSO<br></p>
+									<h5>30.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(15)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/latte.jpg" data-toggle="tooltip"  data-placement="bottom" title="Latte"></div>
+								<div class="col-6 img_nd">
+									<p>LATTE<br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(16)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/mocha.jpg" data-toggle="tooltip"  data-placement="bottom" title="Mocha"></div>
+								<div class="col-6 img_nd">
+									<p>MOCHA<br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(17)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+					<div class="dili_main">
+						<div>
+							<p>Nước Trái Cây<br></p>
+							<div class="img_dili" id="nuoc_tc">
+								<div class="col-3 img_di"><img src="../img/xoai.jpg" data-toggle="tooltip"  data-placement="bottom" title="Sinh tố xoài"></div>
+								<div class="col-6 img_nd">
+									<p>SINH TỐ XOÀI<br></p>
+									<h5>15.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(18)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/dudu.jpg" data-toggle="tooltip"  data-placement="bottom" title="Sinh tố đu đủ"></div>
+								<div class="col-6 img_nd">
+									<p>SINH TỐ ĐU ĐỦ<br></p>
+									<h5>15.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(19)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/tao.jpg" data-toggle="tooltip"  data-placement="bottom" title="Nước ép táo"></div>
+								<div class="col-6 img_nd">
+									<p>NƯỚC ÉP TÁO<br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(20)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/cam.jpg" data-toggle="tooltip"  data-placement="bottom" title="Nước ép cam"></div>
+								<div class="col-6 img_nd">
+									<p>NƯỚC ÉP CAM<br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(21)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/dau.jpg" data-toggle="tooltip"  data-placement="bottom" title="nước ép dâu tây"></div>
+								<div class="col-6 img_nd">
+									<p>NƯỚC ÉP DÂU TÂY<br></p>
+									<h5>30.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(22)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/carot.jpg" data-toggle="tooltip"  data-placement="bottom" title="Nước ép cà rốt"></div>
+								<div class="col-6 img_nd">
+									<p>NƯỚC ÉP CÀ RỐT<br></p>
+									<h5>15.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(23)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</div>
+					<div class="dili_main">
+						<div>
+							<p>Bánh Ngọt<br></p>
+							<div class="img_dili" id="banh">
+								<div class="col-3 img_di"><img src="../img/nama.jpg" data-toggle="tooltip"  data-placement="bottom" title="Namachocolate"></div>
+								<div class="col-6 img_nd">
+									<p>NAMACHOCOLATE<br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(24)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/pudding_cafe.jpg" data-toggle="tooltip"  data-placement="bottom" title="Pudding cafe"></div>
+								<div class="col-6 img_nd">
+									<p>PUDDING CAFE<br></p>
+									<h5>25.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(25)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/cheesecake2.jpg" data-toggle="tooltip"  data-placement="bottom" title="Cheesecake"></div>
+								<div class="col-6 img_nd">
+									<p>CHEESECAKE CAFE<br></p>
+									<h5>25.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(26)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/wagashi.jpg" data-toggle="tooltip"  data-placement="bottom" title="wagashi"></div>
+								<div class="col-6 img_nd">
+									<p>WAGASHI<br></p>
+									<h5>30.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(27)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/banh-muffin-vani.jpg" data-toggle="tooltip"  data-placement="bottom" title="Muffin cafe"></div>
+								<div class="col-6 img_nd">
+									<p>MUFFIN CAFE<br></p>
+									<h5>35.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(28)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>
+						
+							<div class="img_dili">
+								<div class="col-3 img_di"><img src="../img/banh2.jpg"data-toggle="tooltip"  data-placement="bottom" title="Bánh dâu tây"></div>
+								<div class="col-6 img_nd">
+									<p>BÁNH DÂU TÂY<br></p>
+									<h5>20.000 đ</h5>
+								</div>
+								<div class="col-3 ship"  onclick="addToCart(29)">
+									<div class="h6">
+										<h6>Mua Ngay</h6>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 sidebar_2">
+					<div class="nd_dili1">
+						<div class="dili_13">
+							<p class="gio_hang">XEM GIỎ HÀNG</p>
+						</div>
+						<div class="nd_dili">
+							<div class="nd">
+								<p>Cộng (món):</p>
+								 <p id="count">0</p>
+							</div>
+						</div>
+						<div class="sum_T">Tổng Cộng:<p id="sum">0</p></div>
+						<button class="thanhtoan" onclick="thanhToan() ">Thanh toán</button>
+						<button class="huy" onclick="huy()">Hủy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.113240922964!2d105.80123181404586!3d21.028154485998698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab424a50fff9%3A0xbe3a7f3670c0a45f!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBHaWFvIHRow7RuZyBW4bqtbiB04bqjaSAoVVRDKQ!5e0!3m2!1svi!2s!4v1602907278354!5m2!1svi!2s" style="width: 100%; height: 400px" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		
+	    <div class="footer_main" style="margin-top: 5px">
+		<div class="main">
+			<div>
+				<div class="col-md-3 footer_1">
+					<h5>NHÀ<br>BA<br>NGƯỜI</h5>
+					<ul class="socla-icon">
+                        <li><i class="fab fa-twitter-square"></i></li>
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-google-plus-square"></i></li>
+                    </ul>
+				</div>
+				<div class="col-md-3 footer_1">
+					<h5>ABOUT</h5>
+					<a href="../index.html" class="info_a">Tổng quan<br></a>
+					<a href="../introduct/info.html" class="info_a">Về chúng tôi<br></a>
+					<a href="../tuyen_dung/tuyen_dung.html" class="info_a">Cơ hội nghề nghiệp<br></a>
+					<a href="../store/store.html" class="info_a">Cửa hàng</a>
+				</div>
+				<div class="col-md-3 footer_1">
+					<h5>ALWAYS-ON SUPPORT</h5>
+					<p>Delivery 1800 6936 (07:00-21:00)<br>Support +842871 078 079 (07:00-21:00)</p>
+					<h5>ADDRESS</h5>
+					<p>So 3 Cau Giay,P .Lang Ha<br>Q.Dong Da,Tp Ha Noi<br>(84-24)37663311<br>dgth@utc.edu.vn </p>
+				</div>
+				<div class="col-md-3 footer_1">
+					<h5>DELIVERY</h5>
+					<p>Shipping methods<br>Payment<br>Cash voucher<br>Return<br>Exchange</p>
+				</div>
+			</div>
+			
+			<footer>
+				<div class="col-6 footer_0">
+					<p>Copyright © 2020 The House Of Three People. &nbsp; All rights reserved.</p>
+				</div>
+				<div class="col-6 footer_0">
+					<p>PRIVACY POLICY &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; TERMS OF USE</p>
+				</div>
+			</footer>
+		</div>
+	</div>
+    <a href="delivery.html"><img src="../img/giphy.gif" class="icon_online"></a>
+
+    <img src="../img/message.png"  class="mess"></a>
+</body>
+</head>
